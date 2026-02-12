@@ -44,18 +44,9 @@ madstory auth --token YOUR_TOKEN
 madstory generate "一名宇航员在火星发现发光的石碑" --duration 15
 ```
 
-## 🛠 技术实现
-
-本项目包含一个交互式的介绍与演示页面 [index.html](index.html)，实现了以下功能：
-- **响应式设计**：完美适配 PC、平板与手机端。
-- **实时演示区**：可交互的参数选择器，模拟 MadStory 的核心输出流程。
-- **性能优化**：首屏加载时间 < 3s，Lighthouse 评分 90+。
-- **一键复制**：所有生成的提示词与示例命令均支持一键拷贝。
-
 ## 📂 文件结构
 
 - `SKILL.md`: **核心技能定义**，包含详细的 Persona 与 Workflow 规范。
-- `index.html`: 技能介绍与交互演示单页。
 - `references/seedance_guide.md`: Seedance 2.0 原始技术手册参考。
 - `verify_madstory.py`: 技能交互逻辑自动化验证脚本。
 
