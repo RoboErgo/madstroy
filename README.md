@@ -1,11 +1,19 @@
-# MadStory - Seedance 2.0 影视级分镜助手
+# MadStory - Seedance 2.0 影视级分镜助手 (SKILLS 技能包)
 
 [![GitHub](https://img.shields.io/badge/GitHub-RoboErgo%2Fmadstroy-blue?logo=github)](https://github.com/RoboErgo/madstroy)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**MadStory** 是一个基于 **Seedance 2.0 官方使用手册** 深度定制并打包而成的 **SKILLS 技能包**。作为一款影视级分镜助手，它能将模糊的创意构思，通过结构化的导演访谈，转化为完全符合 Seedance 2.0 技术规范的专业视频生成提示词与参数表。
+**MadStory** 是一个基于 **Seedance 2.0 使用手册** 深度定制并打包的 **SKILLS 技能包**。它旨在通过 AI Agent 的能力，将复杂的影视制作规范转化为可交互的创作流程。
 
 ---
+
+## 📦 SKILLS 技能包定义
+
+本项目遵循 [servasyy_skills](https://github.com/huangserva/servasyy_skills) 的规范进行组织，通过结构化的 `SKILL.md` 定义 Agent 的行为边界：
+
+- **基于手册**：核心逻辑严格参考 [Seedance 2.0 技术规格指南](references/seedance_guide.md)。
+- **能力内化**：将 5 维度控制（镜头、光影、色彩、动作、声音）内化为 Agent 的导演思维。
+- **即插即用**：支持在兼容 SKILLS 规范的 AI 环境中直接加载使用。
 
 ## 🌟 核心特性
 
@@ -30,7 +38,8 @@ madstory init --provider seedance2
 madstory auth --token YOUR_TOKEN
 ```
 
-### 3. 生成分镜
+### 3. 使用技能
+在 AI 助手（如 Trae, Claude 等）中加载此技能包，或通过 CLI 生成：
 ```bash
 madstory generate "一名宇航员在火星发现发光的石碑" --duration 15
 ```
@@ -45,22 +54,14 @@ madstory generate "一名宇航员在火星发现发光的石碑" --duration 15
 
 ## 📂 文件结构
 
-- `index.html`: 核心展示与交互单页。
-- `SKILL.md`: 技能定义文件，包含详细的 Persona 与 Workflow。
-- `references/seedance_guide.md`: Seedance 2.0 技术规格参考指南。
-- `verify_madstory.py`: 基于 Playwright 的自动化测试脚本。
-
-## 🤝 贡献指南
-
-1. Fork 本仓库。
-2. 创建您的特性分支 (`git checkout -b feature/AmazingFeature`)。
-3. 提交您的更改 (`git commit -m 'Add some AmazingFeature'`)。
-4. 推送到分支 (`git push origin feature/AmazingFeature`)。
-5. 开启一个 Pull Request。
+- `SKILL.md`: **核心技能定义**，包含详细的 Persona 与 Workflow 规范。
+- `index.html`: 技能介绍与交互演示单页。
+- `references/seedance_guide.md`: Seedance 2.0 原始技术手册参考。
+- `verify_madstory.py`: 技能交互逻辑自动化验证脚本。
 
 ## 📄 开源协议
 
 本项目采用 [MIT](LICENSE) 协议。
 
 ---
-*由 RoboErgo 团队开发。让创意触手可及。*
+*由 RoboErgo 团队开发。基于 SKILLS 规范构建。*
