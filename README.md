@@ -3,7 +3,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-RoboErgo%2Fmadstroy-blue?logo=github)](https://github.com/RoboErgo/madstroy)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**MadStory** 是一款专为 Seedance 2.0 打造的创意导演与分镜助手。它能将模糊的创意构思，通过结构化的导演访谈，转化为专业级别的视频生成提示词与技术规格。
+**MadStory** 是一个基于 **Seedance 2.0 官方使用手册** 深度定制并打包而成的 **SKILLS 技能包**。作为一款影视级分镜助手，它能将模糊的创意构思，通过结构化的导演访谈，转化为完全符合 Seedance 2.0 技术规范的专业视频生成提示词与参数表。
 
 ---
 
